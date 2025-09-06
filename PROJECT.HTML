@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="PROJECT.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List 📝</h1>
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Enter a new task...">
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+    <div class="filter-section">
+      <input type="text" id="search-input" placeholder="Search tasks...">
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="search-btn">Search</button> 
+    </div>
+    <div class="task-boxes">
+      <div class="task-section">
+        <h2>⏳ Pending</h2>
+        <ul id="pending-list"></ul>
+      </div>
+      <div class="task-section">
+        <h2>✅ Completed</h2>
+        <ul id="completed-list"></ul>
+      </div>
+    </div>
+    <p id="task-counter">0 tasks</p>
+    <button id="clear-btn">Clear All</button>
+    <button id="save-btn">Save to File</button>
+  </div>
+  <script src="PROJECT.js"></script>
+</body>
+</html>
